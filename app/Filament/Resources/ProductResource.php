@@ -22,15 +22,15 @@ class ProductResource extends Resource
     protected static ?string $model = Product::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
-    protected static ?string $navigationGroup = 'Products';
+    protected static ?string $navigationGroup = 'منتجات';
     protected static ?int $navigationSort = 1;
-    protected static ?string $label = 'Product';
-    protected static ?string $pluralLabel = 'Products';
+    protected static ?string $label = 'منتجات';
+    protected static ?string $pluralLabel = 'المنتجات';
     protected static ?string $slug = 'products';
     protected static ?string $recordTitleAttribute = 'product_name';
-    protected static ?string $navigationLabel = 'Products';
+    protected static ?string $navigationLabel = 'المنتجات';
     protected static ?string $modelLabel = 'Product';
-    protected static ?string $pluralModelLabel = 'Products';
+    protected static ?string $pluralModelLabel = 'منتجات';
    
 
 

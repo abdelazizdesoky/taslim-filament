@@ -19,15 +19,15 @@ class ProductTypeResource extends Resource
     protected static ?string $model = ProductType::class;
 
    
-    protected static ?string $navigationGroup = 'Products';
+    protected static ?string $navigationGroup = 'منتجات';
     protected static ?int $navigationSort = 3;
-    protected static ?string $label = 'Product Type';
-    protected static ?string $pluralLabel = 'Product Types';
+    protected static ?string $label = ' صنف المنتج';
+    protected static ?string $pluralLabel = ' الأصناف';
     protected static ?string $slug = 'product-types';
     protected static ?string $recordTitleAttribute = 'product_type_name';
-    protected static ?string $navigationLabel = 'Product Types';
+    protected static ?string $navigationLabel = 'منتجات  الأصناف';
     protected static ?string $modelLabel = 'Product Type';
-    protected static ?string $pluralModelLabel = 'Product Types';
+    protected static ?string $pluralModelLabel = 'اصناف المنتجات';
     protected static ?string $navigationIcon = 'heroicon-o-document-text';
     
 

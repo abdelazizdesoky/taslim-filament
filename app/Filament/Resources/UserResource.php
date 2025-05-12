@@ -26,9 +26,9 @@ class UserResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
     protected static ?string $navigationGroup = 'Filament Shield';
-    protected static ?string $navigationLabel = '  Users';
-    protected static ?string $label = 'User';
-    protected static ?string $pluralLabel = 'Users';
+    protected static ?string $navigationLabel = 'مستخدمين';
+    protected static ?string $label = 'مستخدم';
+    protected static ?string $pluralLabel = 'المستخدمين';
     protected static ?string $slug = 'users';
 
 
@@ -46,14 +46,9 @@ class UserResource extends Resource
             Forms\Components\TextInput::make('password')
                 ->password()
                 ->required()
-                ->confirmed()
                 ->maxLength(255)
                 ->dehydrated(fn ($state) => (bool) $state),
   
-            Forms\Components\TextInput::make('password_confirmation')
-                ->password()
-                ->maxLength(255)
-                ->dehydrated(false),
   
 
             Forms\Components\Select::make('roles')

@@ -27,6 +27,15 @@ class InvoiceResource extends Resource
     protected static ?string $model = Invoice::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationGroup = 'الفواتير';
+    protected static ?string $navigationLabel = 'الفواتير';
+    protected static ?string $label = 'فاتورة';
+    protected static ?string $pluralLabel = 'الفواتير';
+    protected static ?string $slug = 'invoices';
+    protected static ?string $recordTitleAttribute = 'code';
+    protected static ?string $modelLabel = 'الفواتير';
+    protected static ?string $pluralModelLabel = 'الفواتير';
+    
 
     public static function form(Form $form): Form
     {
@@ -285,4 +294,6 @@ class InvoiceResource extends Resource
            {
                return auth()->user()->hasPermissionTo('view_invoice');
            }
+
+           
 }

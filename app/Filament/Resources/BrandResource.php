@@ -18,15 +18,15 @@ class BrandResource extends Resource
     protected static ?string $model = Brand::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
-    protected static ?string $navigationGroup = 'Products';
+    protected static ?string $navigationGroup = 'منتجات';
     protected static ?int $navigationSort = 2;
-    protected static ?string $label = 'Brand';
-    protected static ?string $pluralLabel = 'Brands';
+    protected static ?string $label = 'ماركة';
+    protected static ?string $pluralLabel = 'الماركات';
     protected static ?string $slug = 'brands';
     protected static ?string $recordTitleAttribute = 'brand_name';
-    protected static ?string $navigationLabel = 'Brands';
+    protected static ?string $navigationLabel = 'الماركات';
     protected static ?string $modelLabel = 'Brand';
-    protected static ?string $pluralModelLabel = 'Brands';
+    protected static ?string $pluralModelLabel = 'الماركات';
 
     public static function form(Form $form): Form
     {
